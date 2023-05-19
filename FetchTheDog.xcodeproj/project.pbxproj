@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044B67412A0C0F550035F5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67402A0C0F550035F5B6 /* AppDelegate.swift */; };
+		044B67432A0C0F550035F5B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67422A0C0F550035F5B6 /* SceneDelegate.swift */; };
+		044B67472A0C0F560035F5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B67462A0C0F560035F5B6 /* Assets.xcassets */; };
+		044B674A2A0C0F560035F5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044B67482A0C0F560035F5B6 /* LaunchScreen.storyboard */; };
+		045039152A0D659E00E76911 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045039142A0D659E00E76911 /* Strings+Generated.swift */; };
+		046A67AA2A0F72BB00067019 /* OnboardingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A67A92A0F72BB00067019 /* OnboardingViewControllerTests.swift */; };
+		046A67AC2A0F73DB00067019 /* OnboardingInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A67AB2A0F73DB00067019 /* OnboardingInteractorSpy.swift */; };
+		046A67AE2A0F750A00067019 /* OnboardingRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A67AD2A0F750A00067019 /* OnboardingRouterSpy.swift */; };
+		046A67B02A0F7B1000067019 /* OnboardingPagesProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A67AF2A0F7B1000067019 /* OnboardingPagesProviderTests.swift */; };
+		048F122C2A11130C0009AFDD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F122B2A11130C0009AFDD /* User.swift */; };
+		048F122F2A1113B00009AFDD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F122E2A1113B00009AFDD /* CoreDataManager.swift */; };
+		048F12332A1114090009AFDD /* UserAccount.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048F12312A1114090009AFDD /* UserAccount.xcdatamodeld */; };
+		0497F0082A0E1F6300714B26 /* AppNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0072A0E1F6300714B26 /* AppNotification.swift */; };
+		0497F0122A0E20CE00714B26 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F00A2A0E20CE00714B26 /* LoginPresenter.swift */; };
+		0497F0132A0E20CE00714B26 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F00B2A0E20CE00714B26 /* LoginWorker.swift */; };
+		0497F0142A0E20CE00714B26 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F00C2A0E20CE00714B26 /* LoginRouter.swift */; };
+		0497F0152A0E20CE00714B26 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F00D2A0E20CE00714B26 /* LoginModels.swift */; };
+		0497F0162A0E20CE00714B26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F00E2A0E20CE00714B26 /* LoginViewController.swift */; };
+		0497F0172A0E20CE00714B26 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F00F2A0E20CE00714B26 /* LoginBuilder.swift */; };
+		0497F0182A0E20CE00714B26 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0102A0E20CE00714B26 /* LoginInteractor.swift */; };
+		0497F0192A0E20CE00714B26 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0112A0E20CE00714B26 /* LoginView.swift */; };
+		0497F01B2A0E398C00714B26 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F01A2A0E398C00714B26 /* AppCoordinator.swift */; };
+		0497F01D2A0E420A00714B26 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F01C2A0E420A00714B26 /* AppFlow.swift */; };
+		0497F01F2A0E432500714B26 /* FlowKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F01E2A0E432500714B26 /* FlowKeys.swift */; };
+		0497F02E2A0E486300714B26 /* AppFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F02D2A0E486300714B26 /* AppFlowTests.swift */; };
+		0497F0312A0E5CF300714B26 /* UserDefaultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0302A0E5CF300714B26 /* UserDefaultsMock.swift */; };
+		0497F0332A0E602600714B26 /* OnboardingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0322A0E602600714B26 /* OnboardingPresenterTests.swift */; };
+		0497F0362A0E6B2B00714B26 /* OnboardingViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0352A0E6B2B00714B26 /* OnboardingViewControllerSpy.swift */; };
+		0497F0382A0E76DD00714B26 /* OnboardingInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0372A0E76DD00714B26 /* OnboardingInteractorTests.swift */; };
+		0497F03A2A0E7B1E00714B26 /* OnboardingPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0392A0E7B1E00714B26 /* OnboardingPresenterSpy.swift */; };
+		0497F03C2A0E7E8300714B26 /* OnboardingRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F03B2A0E7E8300714B26 /* OnboardingRouterTests.swift */; };
+		0497F03E2A0E847B00714B26 /* SecondOnboardingScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F03D2A0E847B00714B26 /* SecondOnboardingScreenTests.swift */; };
+		0497F0402A0E860100714B26 /* FirstOnboardingScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F03F2A0E860100714B26 /* FirstOnboardingScreenTests.swift */; };
+		0497F0422A0E866600714B26 /* ThirdOnboardingScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497F0412A0E866600714B26 /* ThirdOnboardingScreenTests.swift */; };
+		04EEF8862A14F5090010FD70 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8852A14F5090010FD70 /* CoreDataManagerTests.swift */; };
+		04EEF8882A15168F0010FD70 /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8872A15168F0010FD70 /* LoginWorkerTests.swift */; };
+		04EEF88A2A1516FD0010FD70 /* CoreDataManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8892A1516FD0010FD70 /* CoreDataManagerMock.swift */; };
+		04EEF88C2A15FFA00010FD70 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF88B2A15FFA00010FD70 /* LoginViewControllerTests.swift */; };
+		04EEF88E2A160A4E0010FD70 /* LoginInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF88D2A160A4E0010FD70 /* LoginInteractorSpy.swift */; };
+		04EEF8902A160BF50010FD70 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF88F2A160BF50010FD70 /* LoginInteractorTests.swift */; };
+		04EEF8922A160ED80010FD70 /* LoginPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8912A160ED80010FD70 /* LoginPresenterSpy.swift */; };
+		04EEF8942A1610BE0010FD70 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8932A1610BE0010FD70 /* LoginPresenterTests.swift */; };
+		04EEF8962A1611050010FD70 /* LoginViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8952A1611050010FD70 /* LoginViewControllerSpy.swift */; };
+		04EEF8982A1612AA0010FD70 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8972A1612AA0010FD70 /* UserTests.swift */; };
+		04EEF89A2A161E950010FD70 /* LoginWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8992A161E950010FD70 /* LoginWorkerMock.swift */; };
+		04EEF8A42A1623D30010FD70 /* DogFetcherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF89C2A1623D30010FD70 /* DogFetcherPresenter.swift */; };
+		04EEF8A52A1623D30010FD70 /* DogFetcherWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF89D2A1623D30010FD70 /* DogFetcherWorker.swift */; };
+		04EEF8A62A1623D30010FD70 /* DogFetcherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF89E2A1623D30010FD70 /* DogFetcherRouter.swift */; };
+		04EEF8A72A1623D30010FD70 /* DogFetcherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF89F2A1623D30010FD70 /* DogFetcherModels.swift */; };
+		04EEF8A82A1623D30010FD70 /* DogFetcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8A02A1623D30010FD70 /* DogFetcherViewController.swift */; };
+		04EEF8A92A1623D30010FD70 /* DogFetcherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8A12A1623D30010FD70 /* DogFetcherBuilder.swift */; };
+		04EEF8AA2A1623D30010FD70 /* DogFetcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8A22A1623D30010FD70 /* DogFetcherInteractor.swift */; };
+		04EEF8AB2A1623D30010FD70 /* DogFetcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8A32A1623D30010FD70 /* DogFetcherView.swift */; };
+		04EEF8AD2A1625AF0010FD70 /* LoginRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8AC2A1625AF0010FD70 /* LoginRouterSpy.swift */; };
+		04EEF8AF2A1626C80010FD70 /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8AE2A1626C80010FD70 /* LoginRouterTests.swift */; };
+		04EEF8B12A1643F40010FD70 /* DogFetcherViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8B02A1643F40010FD70 /* DogFetcherViewControllerTests.swift */; };
+		04EEF8B32A16443D0010FD70 /* DogFetcherViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8B22A16443D0010FD70 /* DogFetcherViewControllerSpy.swift */; };
+		04EEF8B52A1644570010FD70 /* DogFetcherInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8B42A1644570010FD70 /* DogFetcherInteractorSpy.swift */; };
+		04EEF8B72A1644630010FD70 /* DogFetcherPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8B62A1644630010FD70 /* DogFetcherPresenterSpy.swift */; };
+		04EEF8B92A1645470010FD70 /* DogFetcherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8B82A1645470010FD70 /* DogFetcherManager.swift */; };
+		04EEF8BB2A164B040010FD70 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8BA2A164B040010FD70 /* Dog.swift */; };
+		04EEF8BD2A164CA30010FD70 /* DogFetcherManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8BC2A164CA30010FD70 /* DogFetcherManagerTests.swift */; };
+		04EEF8BF2A16502B0010FD70 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF8BE2A16502B0010FD70 /* URLSessionMock.swift */; };
+		04F161242A175DE4004D24CB /* DogFetcherWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161232A175DE4004D24CB /* DogFetcherWorkerTests.swift */; };
+		04F161262A175E5B004D24CB /* DogFetcherManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161252A175E5B004D24CB /* DogFetcherManagerMock.swift */; };
+		04F161282A176250004D24CB /* DogFetcherInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161272A176250004D24CB /* DogFetcherInteractorTests.swift */; };
+		04F1612A2A176515004D24CB /* DogFetcherWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161292A176515004D24CB /* DogFetcherWorkerMock.swift */; };
+		04F1612C2A176CB1004D24CB /* DogFetcherPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1612B2A176CB1004D24CB /* DogFetcherPresenterTests.swift */; };
+		04F3C1DA2A0CDF4400F6DACD /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D22A0CDF4400F6DACD /* OnboardingPresenter.swift */; };
+		04F3C1DB2A0CDF4400F6DACD /* OnboardingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D32A0CDF4400F6DACD /* OnboardingWorker.swift */; };
+		04F3C1DC2A0CDF4400F6DACD /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D42A0CDF4400F6DACD /* OnboardingRouter.swift */; };
+		04F3C1DD2A0CDF4400F6DACD /* OnboardingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D52A0CDF4400F6DACD /* OnboardingModels.swift */; };
+		04F3C1DE2A0CDF4400F6DACD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D62A0CDF4400F6DACD /* OnboardingViewController.swift */; };
+		04F3C1DF2A0CDF4400F6DACD /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D72A0CDF4400F6DACD /* OnboardingBuilder.swift */; };
+		04F3C1E02A0CDF4400F6DACD /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1D82A0CDF4400F6DACD /* OnboardingInteractor.swift */; };
+		04F3C1E42A0CF75900F6DACD /* OnboardingPagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1E32A0CF75900F6DACD /* OnboardingPagesProvider.swift */; };
+		04F3C1E72A0D129C00F6DACD /* FirstOnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1E62A0D129C00F6DACD /* FirstOnboardingScreen.swift */; };
+		04F3C1E92A0D12A900F6DACD /* SecondOnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1E82A0D12A900F6DACD /* SecondOnboardingScreen.swift */; };
+		04F3C1EB2A0D12B200F6DACD /* ThirdOnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3C1EA2A0D12B200F6DACD /* ThirdOnboardingScreen.swift */; };
+		04F3C1F12A0D195A00F6DACD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F3C1F32A0D195A00F6DACD /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0497F0282A0E478500714B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044B67352A0C0F550035F5B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044B673C2A0C0F550035F5B6;
+			remoteInfo = FetchTheDog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044B673D2A0C0F550035F5B6 /* FetchTheDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTheDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044B67402A0C0F550035F5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		044B67422A0C0F550035F5B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		044B67462A0C0F560035F5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044B67492A0C0F560035F5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044B674B2A0C0F560035F5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045039142A0D659E00E76911 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		046A67A92A0F72BB00067019 /* OnboardingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerTests.swift; sourceTree = "<group>"; };
+		046A67AB2A0F73DB00067019 /* OnboardingInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorSpy.swift; sourceTree = "<group>"; };
+		046A67AD2A0F750A00067019 /* OnboardingRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouterSpy.swift; sourceTree = "<group>"; };
+		046A67AF2A0F7B1000067019 /* OnboardingPagesProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagesProviderTests.swift; sourceTree = "<group>"; };
+		048F122B2A11130C0009AFDD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		048F122E2A1113B00009AFDD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		048F12322A1114090009AFDD /* UserAccount.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserAccount.xcdatamodel; sourceTree = "<group>"; };
+		0497F0072A0E1F6300714B26 /* AppNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotification.swift; sourceTree = "<group>"; };
+		0497F00A2A0E20CE00714B26 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		0497F00B2A0E20CE00714B26 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		0497F00C2A0E20CE00714B26 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		0497F00D2A0E20CE00714B26 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		0497F00E2A0E20CE00714B26 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0497F00F2A0E20CE00714B26 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		0497F0102A0E20CE00714B26 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		0497F0112A0E20CE00714B26 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0497F01A2A0E398C00714B26 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0497F01C2A0E420A00714B26 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		0497F01E2A0E432500714B26 /* FlowKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowKeys.swift; sourceTree = "<group>"; };
+		0497F0242A0E478500714B26 /* FetchTheDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTheDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0497F02D2A0E486300714B26 /* AppFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowTests.swift; sourceTree = "<group>"; };
+		0497F0302A0E5CF300714B26 /* UserDefaultsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMock.swift; sourceTree = "<group>"; };
+		0497F0322A0E602600714B26 /* OnboardingPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterTests.swift; sourceTree = "<group>"; };
+		0497F0352A0E6B2B00714B26 /* OnboardingViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerSpy.swift; sourceTree = "<group>"; };
+		0497F0372A0E76DD00714B26 /* OnboardingInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorTests.swift; sourceTree = "<group>"; };
+		0497F0392A0E7B1E00714B26 /* OnboardingPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterSpy.swift; sourceTree = "<group>"; };
+		0497F03B2A0E7E8300714B26 /* OnboardingRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouterTests.swift; sourceTree = "<group>"; };
+		0497F03D2A0E847B00714B26 /* SecondOnboardingScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingScreenTests.swift; sourceTree = "<group>"; };
+		0497F03F2A0E860100714B26 /* FirstOnboardingScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingScreenTests.swift; sourceTree = "<group>"; };
+		0497F0412A0E866600714B26 /* ThirdOnboardingScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingScreenTests.swift; sourceTree = "<group>"; };
+		04EEF8852A14F5090010FD70 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
+		04EEF8872A15168F0010FD70 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
+		04EEF8892A1516FD0010FD70 /* CoreDataManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerMock.swift; sourceTree = "<group>"; };
+		04EEF88B2A15FFA00010FD70 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		04EEF88D2A160A4E0010FD70 /* LoginInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorSpy.swift; sourceTree = "<group>"; };
+		04EEF88F2A160BF50010FD70 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		04EEF8912A160ED80010FD70 /* LoginPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterSpy.swift; sourceTree = "<group>"; };
+		04EEF8932A1610BE0010FD70 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		04EEF8952A1611050010FD70 /* LoginViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpy.swift; sourceTree = "<group>"; };
+		04EEF8972A1612AA0010FD70 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		04EEF8992A161E950010FD70 /* LoginWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerMock.swift; sourceTree = "<group>"; };
+		04EEF89C2A1623D30010FD70 /* DogFetcherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherPresenter.swift; sourceTree = "<group>"; };
+		04EEF89D2A1623D30010FD70 /* DogFetcherWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherWorker.swift; sourceTree = "<group>"; };
+		04EEF89E2A1623D30010FD70 /* DogFetcherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherRouter.swift; sourceTree = "<group>"; };
+		04EEF89F2A1623D30010FD70 /* DogFetcherModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherModels.swift; sourceTree = "<group>"; };
+		04EEF8A02A1623D30010FD70 /* DogFetcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherViewController.swift; sourceTree = "<group>"; };
+		04EEF8A12A1623D30010FD70 /* DogFetcherBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherBuilder.swift; sourceTree = "<group>"; };
+		04EEF8A22A1623D30010FD70 /* DogFetcherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherInteractor.swift; sourceTree = "<group>"; };
+		04EEF8A32A1623D30010FD70 /* DogFetcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherView.swift; sourceTree = "<group>"; };
+		04EEF8AC2A1625AF0010FD70 /* LoginRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterSpy.swift; sourceTree = "<group>"; };
+		04EEF8AE2A1626C80010FD70 /* LoginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
+		04EEF8B02A1643F40010FD70 /* DogFetcherViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherViewControllerTests.swift; sourceTree = "<group>"; };
+		04EEF8B22A16443D0010FD70 /* DogFetcherViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherViewControllerSpy.swift; sourceTree = "<group>"; };
+		04EEF8B42A1644570010FD70 /* DogFetcherInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherInteractorSpy.swift; sourceTree = "<group>"; };
+		04EEF8B62A1644630010FD70 /* DogFetcherPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherPresenterSpy.swift; sourceTree = "<group>"; };
+		04EEF8B82A1645470010FD70 /* DogFetcherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherManager.swift; sourceTree = "<group>"; };
+		04EEF8BA2A164B040010FD70 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		04EEF8BC2A164CA30010FD70 /* DogFetcherManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherManagerTests.swift; sourceTree = "<group>"; };
+		04EEF8BE2A16502B0010FD70 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		04F161232A175DE4004D24CB /* DogFetcherWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherWorkerTests.swift; sourceTree = "<group>"; };
+		04F161252A175E5B004D24CB /* DogFetcherManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherManagerMock.swift; sourceTree = "<group>"; };
+		04F161272A176250004D24CB /* DogFetcherInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherInteractorTests.swift; sourceTree = "<group>"; };
+		04F161292A176515004D24CB /* DogFetcherWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherWorkerMock.swift; sourceTree = "<group>"; };
+		04F1612B2A176CB1004D24CB /* DogFetcherPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherPresenterTests.swift; sourceTree = "<group>"; };
+		04F3C1D22A0CDF4400F6DACD /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		04F3C1D32A0CDF4400F6DACD /* OnboardingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWorker.swift; sourceTree = "<group>"; };
+		04F3C1D42A0CDF4400F6DACD /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		04F3C1D52A0CDF4400F6DACD /* OnboardingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModels.swift; sourceTree = "<group>"; };
+		04F3C1D62A0CDF4400F6DACD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		04F3C1D72A0CDF4400F6DACD /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
+		04F3C1D82A0CDF4400F6DACD /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		04F3C1E32A0CF75900F6DACD /* OnboardingPagesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagesProvider.swift; sourceTree = "<group>"; };
+		04F3C1E62A0D129C00F6DACD /* FirstOnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingScreen.swift; sourceTree = "<group>"; };
+		04F3C1E82A0D12A900F6DACD /* SecondOnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingScreen.swift; sourceTree = "<group>"; };
+		04F3C1EA2A0D12B200F6DACD /* ThirdOnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingScreen.swift; sourceTree = "<group>"; };
+		04F3C1F02A0D194D00F6DACD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04F3C1F22A0D195A00F6DACD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04F3C1F42A0D195D00F6DACD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044B673A2A0C0F550035F5B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0497F0212A0E478500714B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044B67342A0C0F550035F5B6 = {
+			isa = PBXGroup;
+			children = (
+				044B673F2A0C0F550035F5B6 /* FetchTheDog */,
+				0497F0252A0E478500714B26 /* FetchTheDogTests */,
+				044B673E2A0C0F550035F5B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		044B673E2A0C0F550035F5B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044B673D2A0C0F550035F5B6 /* FetchTheDog.app */,
+				0497F0242A0E478500714B26 /* FetchTheDogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044B673F2A0C0F550035F5B6 /* FetchTheDog */ = {
+			isa = PBXGroup;
+			children = (
+				048F12302A1113DD0009AFDD /* DataLayer */,
+				048F122D2A1113A10009AFDD /* Managers */,
+				048F122A2A1113000009AFDD /* Models */,
+				04F3C1EC2A0D18C100F6DACD /* Resourses */,
+				04F3C1ED2A0D18F000F6DACD /* Application */,
+				04F3C1E52A0D126600F6DACD /* Scenes */,
+			);
+			path = FetchTheDog;
+			sourceTree = "<group>";
+		};
+		048F122A2A1113000009AFDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				048F122B2A11130C0009AFDD /* User.swift */,
+				04EEF8BA2A164B040010FD70 /* Dog.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		048F122D2A1113A10009AFDD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				048F122E2A1113B00009AFDD /* CoreDataManager.swift */,
+				04EEF8B82A1645470010FD70 /* DogFetcherManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		048F12302A1113DD0009AFDD /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				048F12312A1114090009AFDD /* UserAccount.xcdatamodeld */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		0497F0092A0E20BA00714B26 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0497F00A2A0E20CE00714B26 /* LoginPresenter.swift */,
+				0497F00B2A0E20CE00714B26 /* LoginWorker.swift */,
+				0497F00C2A0E20CE00714B26 /* LoginRouter.swift */,
+				0497F00D2A0E20CE00714B26 /* LoginModels.swift */,
+				0497F00E2A0E20CE00714B26 /* LoginViewController.swift */,
+				0497F00F2A0E20CE00714B26 /* LoginBuilder.swift */,
+				0497F0102A0E20CE00714B26 /* LoginInteractor.swift */,
+				0497F0112A0E20CE00714B26 /* LoginView.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0497F0252A0E478500714B26 /* FetchTheDogTests */ = {
+			isa = PBXGroup;
+			children = (
+				0497F02F2A0E503D00714B26 /* FetchTheDogTests */,
+			);
+			path = FetchTheDogTests;
+			sourceTree = "<group>";
+		};
+		0497F02F2A0E503D00714B26 /* FetchTheDogTests */ = {
+			isa = PBXGroup;
+			children = (
+				04EEF8872A15168F0010FD70 /* LoginWorkerTests.swift */,
+				04EEF8BC2A164CA30010FD70 /* DogFetcherManagerTests.swift */,
+				04F161232A175DE4004D24CB /* DogFetcherWorkerTests.swift */,
+				04EEF8B02A1643F40010FD70 /* DogFetcherViewControllerTests.swift */,
+				04F161272A176250004D24CB /* DogFetcherInteractorTests.swift */,
+				04F1612B2A176CB1004D24CB /* DogFetcherPresenterTests.swift */,
+				04EEF8AE2A1626C80010FD70 /* LoginRouterTests.swift */,
+				04EEF8972A1612AA0010FD70 /* UserTests.swift */,
+				04EEF88F2A160BF50010FD70 /* LoginInteractorTests.swift */,
+				04EEF8932A1610BE0010FD70 /* LoginPresenterTests.swift */,
+				04EEF88B2A15FFA00010FD70 /* LoginViewControllerTests.swift */,
+				0497F02D2A0E486300714B26 /* AppFlowTests.swift */,
+				04EEF8852A14F5090010FD70 /* CoreDataManagerTests.swift */,
+				0497F0322A0E602600714B26 /* OnboardingPresenterTests.swift */,
+				0497F03D2A0E847B00714B26 /* SecondOnboardingScreenTests.swift */,
+				0497F0372A0E76DD00714B26 /* OnboardingInteractorTests.swift */,
+				0497F03F2A0E860100714B26 /* FirstOnboardingScreenTests.swift */,
+				0497F0412A0E866600714B26 /* ThirdOnboardingScreenTests.swift */,
+				0497F03B2A0E7E8300714B26 /* OnboardingRouterTests.swift */,
+				046A67A92A0F72BB00067019 /* OnboardingViewControllerTests.swift */,
+				046A67AF2A0F7B1000067019 /* OnboardingPagesProviderTests.swift */,
+				0497F0342A0E6B0200714B26 /* Mocks&Spy's */,
+			);
+			path = FetchTheDogTests;
+			sourceTree = "<group>";
+		};
+		0497F0342A0E6B0200714B26 /* Mocks&Spy's */ = {
+			isa = PBXGroup;
+			children = (
+				0497F0302A0E5CF300714B26 /* UserDefaultsMock.swift */,
+				04F161292A176515004D24CB /* DogFetcherWorkerMock.swift */,
+				04F161252A175E5B004D24CB /* DogFetcherManagerMock.swift */,
+				04EEF8BE2A16502B0010FD70 /* URLSessionMock.swift */,
+				04EEF8B22A16443D0010FD70 /* DogFetcherViewControllerSpy.swift */,
+				04EEF8B42A1644570010FD70 /* DogFetcherInteractorSpy.swift */,
+				04EEF8B62A1644630010FD70 /* DogFetcherPresenterSpy.swift */,
+				04EEF8AC2A1625AF0010FD70 /* LoginRouterSpy.swift */,
+				04EEF8992A161E950010FD70 /* LoginWorkerMock.swift */,
+				0497F0352A0E6B2B00714B26 /* OnboardingViewControllerSpy.swift */,
+				0497F0392A0E7B1E00714B26 /* OnboardingPresenterSpy.swift */,
+				046A67AB2A0F73DB00067019 /* OnboardingInteractorSpy.swift */,
+				046A67AD2A0F750A00067019 /* OnboardingRouterSpy.swift */,
+				04EEF8892A1516FD0010FD70 /* CoreDataManagerMock.swift */,
+				04EEF88D2A160A4E0010FD70 /* LoginInteractorSpy.swift */,
+				04EEF8912A160ED80010FD70 /* LoginPresenterSpy.swift */,
+				04EEF8952A1611050010FD70 /* LoginViewControllerSpy.swift */,
+			);
+			name = "Mocks&Spy's";
+			sourceTree = "<group>";
+		};
+		04EEF89B2A1623BF0010FD70 /* DogFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				04EEF89C2A1623D30010FD70 /* DogFetcherPresenter.swift */,
+				04EEF89D2A1623D30010FD70 /* DogFetcherWorker.swift */,
+				04EEF89E2A1623D30010FD70 /* DogFetcherRouter.swift */,
+				04EEF89F2A1623D30010FD70 /* DogFetcherModels.swift */,
+				04EEF8A02A1623D30010FD70 /* DogFetcherViewController.swift */,
+				04EEF8A12A1623D30010FD70 /* DogFetcherBuilder.swift */,
+				04EEF8A22A1623D30010FD70 /* DogFetcherInteractor.swift */,
+				04EEF8A32A1623D30010FD70 /* DogFetcherView.swift */,
+			);
+			name = DogFetcher;
+			sourceTree = "<group>";
+		};
+		04F3C1E22A0CF6E500F6DACD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				04F3C1D22A0CDF4400F6DACD /* OnboardingPresenter.swift */,
+				04F3C1D32A0CDF4400F6DACD /* OnboardingWorker.swift */,
+				04F3C1D42A0CDF4400F6DACD /* OnboardingRouter.swift */,
+				04F3C1D62A0CDF4400F6DACD /* OnboardingViewController.swift */,
+				04F3C1D72A0CDF4400F6DACD /* OnboardingBuilder.swift */,
+				04F3C1D82A0CDF4400F6DACD /* OnboardingInteractor.swift */,
+				04F3C1E32A0CF75900F6DACD /* OnboardingPagesProvider.swift */,
+				04F3C1D52A0CDF4400F6DACD /* OnboardingModels.swift */,
+				04F3C1E62A0D129C00F6DACD /* FirstOnboardingScreen.swift */,
+				04F3C1E82A0D12A900F6DACD /* SecondOnboardingScreen.swift */,
+				04F3C1EA2A0D12B200F6DACD /* ThirdOnboardingScreen.swift */,
+				0497F0072A0E1F6300714B26 /* AppNotification.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		04F3C1E52A0D126600F6DACD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				04EEF89B2A1623BF0010FD70 /* DogFetcher */,
+				0497F0092A0E20BA00714B26 /* Login */,
+				04F3C1E22A0CF6E500F6DACD /* Onboarding */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		04F3C1EC2A0D18C100F6DACD /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				045039142A0D659E00E76911 /* Strings+Generated.swift */,
+				04F3C1F32A0D195A00F6DACD /* Localizable.strings */,
+				044B67462A0C0F560035F5B6 /* Assets.xcassets */,
+				044B67482A0C0F560035F5B6 /* LaunchScreen.storyboard */,
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
+		04F3C1ED2A0D18F000F6DACD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				044B674B2A0C0F560035F5B6 /* Info.plist */,
+				044B67402A0C0F550035F5B6 /* AppDelegate.swift */,
+				044B67422A0C0F550035F5B6 /* SceneDelegate.swift */,
+				0497F01A2A0E398C00714B26 /* AppCoordinator.swift */,
+				0497F01C2A0E420A00714B26 /* AppFlow.swift */,
+				0497F01E2A0E432500714B26 /* FlowKeys.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044B673C2A0C0F550035F5B6 /* FetchTheDog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044B674E2A0C0F560035F5B6 /* Build configuration list for PBXNativeTarget "FetchTheDog" */;
+			buildPhases = (
+				045039112A0D2F1800E76911 /* SwiftGen */,
+				044B67392A0C0F550035F5B6 /* Sources */,
+				044B673A2A0C0F550035F5B6 /* Frameworks */,
+				044B673B2A0C0F550035F5B6 /* Resources */,
+				045039162A0D6A5100E76911 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FetchTheDog;
+			productName = FetchTheDog;
+			productReference = 044B673D2A0C0F550035F5B6 /* FetchTheDog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0497F0232A0E478500714B26 /* FetchTheDogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0497F02A2A0E478500714B26 /* Build configuration list for PBXNativeTarget "FetchTheDogTests" */;
+			buildPhases = (
+				0497F0202A0E478500714B26 /* Sources */,
+				0497F0212A0E478500714B26 /* Frameworks */,
+				0497F0222A0E478500714B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0497F0292A0E478500714B26 /* PBXTargetDependency */,
+			);
+			name = FetchTheDogTests;
+			productName = FetchTheDogTests;
+			productReference = 0497F0242A0E478500714B26 /* FetchTheDogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044B67352A0C0F550035F5B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					044B673C2A0C0F550035F5B6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					0497F0232A0E478500714B26 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 044B673C2A0C0F550035F5B6;
+					};
+				};
+			};
+			buildConfigurationList = 044B67382A0C0F550035F5B6 /* Build configuration list for PBXProject "FetchTheDog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 044B67342A0C0F550035F5B6;
+			productRefGroup = 044B673E2A0C0F550035F5B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044B673C2A0C0F550035F5B6 /* FetchTheDog */,
+				0497F0232A0E478500714B26 /* FetchTheDogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044B673B2A0C0F550035F5B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044B67472A0C0F560035F5B6 /* Assets.xcassets in Resources */,
+				04F3C1F12A0D195A00F6DACD /* Localizable.strings in Resources */,
+				044B674A2A0C0F560035F5B6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0497F0222A0E478500714B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045039112A0D2F1800E76911 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/FetchTheDog/Strings+Generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env sh\n\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftgen > /dev/null; then\n\tswiftgen config run --config FetchTheDog/swiftgen.yml\nelse\n\techo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\n\texit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		045039162A0D6A5100E76911 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --config FetchTheDog/swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044B67392A0C0F550035F5B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EEF8A52A1623D30010FD70 /* DogFetcherWorker.swift in Sources */,
+				0497F0122A0E20CE00714B26 /* LoginPresenter.swift in Sources */,
+				04EEF8A92A1623D30010FD70 /* DogFetcherBuilder.swift in Sources */,
+				04F3C1DD2A0CDF4400F6DACD /* OnboardingModels.swift in Sources */,
+				04F3C1E72A0D129C00F6DACD /* FirstOnboardingScreen.swift in Sources */,
+				0497F0132A0E20CE00714B26 /* LoginWorker.swift in Sources */,
+				0497F0192A0E20CE00714B26 /* LoginView.swift in Sources */,
+				048F122C2A11130C0009AFDD /* User.swift in Sources */,
+				0497F0082A0E1F6300714B26 /* AppNotification.swift in Sources */,
+				04F3C1EB2A0D12B200F6DACD /* ThirdOnboardingScreen.swift in Sources */,
+				048F12332A1114090009AFDD /* UserAccount.xcdatamodeld in Sources */,
+				04EEF8BB2A164B040010FD70 /* Dog.swift in Sources */,
+				04F3C1DC2A0CDF4400F6DACD /* OnboardingRouter.swift in Sources */,
+				045039152A0D659E00E76911 /* Strings+Generated.swift in Sources */,
+				0497F0162A0E20CE00714B26 /* LoginViewController.swift in Sources */,
+				04EEF8A62A1623D30010FD70 /* DogFetcherRouter.swift in Sources */,
+				0497F0172A0E20CE00714B26 /* LoginBuilder.swift in Sources */,
+				04F3C1DE2A0CDF4400F6DACD /* OnboardingViewController.swift in Sources */,
+				0497F01B2A0E398C00714B26 /* AppCoordinator.swift in Sources */,
+				044B67412A0C0F550035F5B6 /* AppDelegate.swift in Sources */,
+				04EEF8AA2A1623D30010FD70 /* DogFetcherInteractor.swift in Sources */,
+				0497F0182A0E20CE00714B26 /* LoginInteractor.swift in Sources */,
+				044B67432A0C0F550035F5B6 /* SceneDelegate.swift in Sources */,
+				04F3C1DA2A0CDF4400F6DACD /* OnboardingPresenter.swift in Sources */,
+				04EEF8A82A1623D30010FD70 /* DogFetcherViewController.swift in Sources */,
+				04EEF8A42A1623D30010FD70 /* DogFetcherPresenter.swift in Sources */,
+				04F3C1E92A0D12A900F6DACD /* SecondOnboardingScreen.swift in Sources */,
+				0497F0152A0E20CE00714B26 /* LoginModels.swift in Sources */,
+				0497F01F2A0E432500714B26 /* FlowKeys.swift in Sources */,
+				04EEF8B92A1645470010FD70 /* DogFetcherManager.swift in Sources */,
+				04F3C1DF2A0CDF4400F6DACD /* OnboardingBuilder.swift in Sources */,
+				0497F0142A0E20CE00714B26 /* LoginRouter.swift in Sources */,
+				04F3C1DB2A0CDF4400F6DACD /* OnboardingWorker.swift in Sources */,
+				04EEF8AB2A1623D30010FD70 /* DogFetcherView.swift in Sources */,
+				04EEF8A72A1623D30010FD70 /* DogFetcherModels.swift in Sources */,
+				04F3C1E02A0CDF4400F6DACD /* OnboardingInteractor.swift in Sources */,
+				0497F01D2A0E420A00714B26 /* AppFlow.swift in Sources */,
+				048F122F2A1113B00009AFDD /* CoreDataManager.swift in Sources */,
+				04F3C1E42A0CF75900F6DACD /* OnboardingPagesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0497F0202A0E478500714B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EEF8BD2A164CA30010FD70 /* DogFetcherManagerTests.swift in Sources */,
+				04EEF88C2A15FFA00010FD70 /* LoginViewControllerTests.swift in Sources */,
+				0497F0422A0E866600714B26 /* ThirdOnboardingScreenTests.swift in Sources */,
+				046A67AE2A0F750A00067019 /* OnboardingRouterSpy.swift in Sources */,
+				04EEF8B72A1644630010FD70 /* DogFetcherPresenterSpy.swift in Sources */,
+				0497F03A2A0E7B1E00714B26 /* OnboardingPresenterSpy.swift in Sources */,
+				04EEF8BF2A16502B0010FD70 /* URLSessionMock.swift in Sources */,
+				046A67AC2A0F73DB00067019 /* OnboardingInteractorSpy.swift in Sources */,
+				0497F0312A0E5CF300714B26 /* UserDefaultsMock.swift in Sources */,
+				0497F03E2A0E847B00714B26 /* SecondOnboardingScreenTests.swift in Sources */,
+				04EEF89A2A161E950010FD70 /* LoginWorkerMock.swift in Sources */,
+				04EEF8B32A16443D0010FD70 /* DogFetcherViewControllerSpy.swift in Sources */,
+				04EEF88E2A160A4E0010FD70 /* LoginInteractorSpy.swift in Sources */,
+				04EEF8942A1610BE0010FD70 /* LoginPresenterTests.swift in Sources */,
+				04F161262A175E5B004D24CB /* DogFetcherManagerMock.swift in Sources */,
+				04EEF8902A160BF50010FD70 /* LoginInteractorTests.swift in Sources */,
+				04EEF8862A14F5090010FD70 /* CoreDataManagerTests.swift in Sources */,
+				04EEF8882A15168F0010FD70 /* LoginWorkerTests.swift in Sources */,
+				04EEF8982A1612AA0010FD70 /* UserTests.swift in Sources */,
+				04F1612C2A176CB1004D24CB /* DogFetcherPresenterTests.swift in Sources */,
+				0497F03C2A0E7E8300714B26 /* OnboardingRouterTests.swift in Sources */,
+				04EEF8B12A1643F40010FD70 /* DogFetcherViewControllerTests.swift in Sources */,
+				04F1612A2A176515004D24CB /* DogFetcherWorkerMock.swift in Sources */,
+				046A67AA2A0F72BB00067019 /* OnboardingViewControllerTests.swift in Sources */,
+				046A67B02A0F7B1000067019 /* OnboardingPagesProviderTests.swift in Sources */,
+				04F161282A176250004D24CB /* DogFetcherInteractorTests.swift in Sources */,
+				04F161242A175DE4004D24CB /* DogFetcherWorkerTests.swift in Sources */,
+				04EEF88A2A1516FD0010FD70 /* CoreDataManagerMock.swift in Sources */,
+				0497F02E2A0E486300714B26 /* AppFlowTests.swift in Sources */,
+				0497F0362A0E6B2B00714B26 /* OnboardingViewControllerSpy.swift in Sources */,
+				04EEF8B52A1644570010FD70 /* DogFetcherInteractorSpy.swift in Sources */,
+				0497F0382A0E76DD00714B26 /* OnboardingInteractorTests.swift in Sources */,
+				04EEF8AF2A1626C80010FD70 /* LoginRouterTests.swift in Sources */,
+				04EEF8AD2A1625AF0010FD70 /* LoginRouterSpy.swift in Sources */,
+				0497F0332A0E602600714B26 /* OnboardingPresenterTests.swift in Sources */,
+				0497F0402A0E860100714B26 /* FirstOnboardingScreenTests.swift in Sources */,
+				04EEF8922A160ED80010FD70 /* LoginPresenterSpy.swift in Sources */,
+				04EEF8962A1611050010FD70 /* LoginViewControllerSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0497F0292A0E478500714B26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044B673C2A0C0F550035F5B6 /* FetchTheDog */;
+			targetProxy = 0497F0282A0E478500714B26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044B67482A0C0F560035F5B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044B67492A0C0F560035F5B6 /* Base */,
+				04F3C1F02A0D194D00F6DACD /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04F3C1F32A0D195A00F6DACD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F3C1F22A0D195A00F6DACD /* en */,
+				04F3C1F42A0D195D00F6DACD /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044B674C2A0C0F560035F5B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		044B674D2A0C0F560035F5B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044B674F2A0C0F560035F5B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCX8Z993GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FetchTheDog/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AB.bavcom.FetchTheDog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		044B67502A0C0F560035F5B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCX8Z993GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FetchTheDog/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AB.bavcom.FetchTheDog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0497F02B2A0E478500714B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCX8Z993GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AB.bavcom.FetchTheDogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTheDog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTheDog";
+			};
+			name = Debug;
+		};
+		0497F02C2A0E478500714B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCX8Z993GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AB.bavcom.FetchTheDogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTheDog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTheDog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044B67382A0C0F550035F5B6 /* Build configuration list for PBXProject "FetchTheDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044B674C2A0C0F560035F5B6 /* Debug */,
+				044B674D2A0C0F560035F5B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044B674E2A0C0F560035F5B6 /* Build configuration list for PBXNativeTarget "FetchTheDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044B674F2A0C0F560035F5B6 /* Debug */,
+				044B67502A0C0F560035F5B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0497F02A2A0E478500714B26 /* Build configuration list for PBXNativeTarget "FetchTheDogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0497F02B2A0E478500714B26 /* Debug */,
+				0497F02C2A0E478500714B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		048F12312A1114090009AFDD /* UserAccount.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				048F12322A1114090009AFDD /* UserAccount.xcdatamodel */,
+			);
+			currentVersion = 048F12322A1114090009AFDD /* UserAccount.xcdatamodel */;
+			path = UserAccount.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 044B67352A0C0F550035F5B6 /* Project object */;
+}

@@ -1,0 +1,11 @@
+## Strings
+strings:
+  inputs:
+    # 1
+    - en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      # 2
+      params:
+        disableSwiftlint: true
+      output: Strings+Generated.swift

@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  FetchTheDog
+
+  Created by Mac on 11.05.2023.
+  
+*/
+"Onboarding.FirstPage.Welcome" = "Hello, welcome to the app that fetches photos of random dogs everytime you want";
+"Onboarding.SecondPage.About" = "Our app has a login form, when you login first, there will no any need to do that again";
+"Onboarding.ThirdPage.LetsDive" = "Without further ado, let's dive in!";
+"Onboarding.ThirdPage.loginFormButton" = "Log in Form";
+"Login.LoginTextfield" = "Enter your login";
+"Login.PasswordTextField" = "Enter your password";
+"Login.LoginButton" = "Log in";
+"Login.RegisterButton" = "Register";
+"Login.RegistrationSuccessAlertTitle" = "Registration complete";
+"Login.RegistrationSuccessAlertMessage" = "You can use your login and password to enter the app";
+"Login.RegistrationSuccessAlertButtonTitle" = "Ok";
+"Login.RegistrationFailAlertTitle" = "Registration failed";
+"Login.RegistrationFailAlertMessage" = "Please try again, your login and password must contain more than 4 characters";
+"Login.RegistrationFailAlertButtonTitle" = "Try again";
+"Login.LoginFailAlertTitle" = "Wrong login or password";
+"Login.LoginFailAlertMessage" = "Try again, or register instead of that";
+"Login.LoginFailAlertButtonTitle" = "Try again";
+"DogFetcher.FetchDogButtonTitle" = "Fetch the dog image";
+"DogFetcher.FetchFailureAlertButtonTittle" = "Ok";
+"DogFetcher.FetchFailureAlert.NoImageDataTitle" = "No image";
+"DogFetcher.FetchFailureAlert.NoImageDataMessage" = "Please try again and load new image";
+"DogFetcher.FetchFailureAlert.СanNotCreateURLTitle" = "URL is Broken";
+"DogFetcher.FetchFailureAlert.СanNotCreateURLMessage" = "It seems that the link no longer exists";
+"DogFetcher.FetchFailureAlert.NoDogsDataTitle" = "The dogs data is broken";
+"DogFetcher.FetchFailureAlert.NoDogsDataMessage" = "It seems that the data is missed or broken";

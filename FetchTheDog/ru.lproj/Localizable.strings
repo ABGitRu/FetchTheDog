@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  FetchTheDog
+
+  Created by Mac on 11.05.2023.
+  
+*/
+"Onboarding.FirstPage.Welcome" = "Привет! Добро пожаловать в приложение которое загружает фотографии случайных собак каждый раз, когда вы этого хотите";
+"Onboarding.SecondPage.About" = "В нашем приложении есть форма входа в систему, когда вы сначала войдете в систему, вам не нужно будет делать это снова.";
+"Onboarding.ThirdPage.LetsDive" = "Без лишних слов, давайте погружаться!";
+"Onboarding.ThirdPage.loginFormButton" = "Вход в систему";
+"Login.LoginTextfield" = "Введите ваш логин";
+"Login.PasswordTextField" = "Введите ваш пароль";
+"Login.LoginButton" = "Войти";
+"Login.RegisterButton" = "Зарегистрироваться";
+"Login.RegistrationSuccessAlertTitle" = "Регистрация завершена";
+"Login.RegistrationSuccessAlertMessage" = "Вы можете использовать свой логин и пароль чтобы войти";
+"Login.RegistrationSuccessAlertButtonTitle" = "Хорошо";
+"Login.RegistrationFailAlertTitle" = "Регистрация не успешна";
+"Login.RegistrationFailAlertMessage" = "Пожалуйста попробуйте еще раз, ваш логин и пароль должен содержать больше 4 символов";
+"Login.RegistrationFailAlertButtonTitle" = "Попробовать еще раз";
+"Login.LoginFailAlertTitle" = "Неверное имя или пароль";
+"Login.LoginFailAlertMessage" = "Попробуйте заново или зарегистрируйтесь заново";
+"Login.LoginFailAlertButtonTitle" = "Попробовать еще раз";
+"DogFetcher.FetchDogButtonTitle" = "Скачать картинку собаки";
+"DogFetcher.FetchFailureAlertButtonTittle" = "Ок";
+"DogFetcher.FetchFailureAlert.NoImageDataTitle" = "Нет картинки";
+"DogFetcher.FetchFailureAlert.NoImageDataMessage" = "Пожалуйста попробуйте еще раз загрузить картинку";
+"DogFetcher.FetchFailureAlert.СanNotCreateURLTitle" = "Ссылка сломана";
+"DogFetcher.FetchFailureAlert.СanNotCreateURLMessage" = "Кажется что ссылка больше не существует";
+"DogFetcher.FetchFailureAlert.NoDogsDataTitle" = "Данные о собаках сломаны";
+"DogFetcher.FetchFailureAlert.NoDogsDataMessage" = "Кажется, что данные потеряны или сломаны";
