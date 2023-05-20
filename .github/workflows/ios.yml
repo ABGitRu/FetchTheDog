@@ -19,13 +19,13 @@ jobs:
         run: brew install swiftgen
 
       - name: Generate SwiftGen files
-        run: swiftgen
+        run: swiftgen config run --config FetchTheDog/swiftgen.yml
       
       - name: Install SwiftLint
         run: brew install swiftlint
 
       - name: Run SwiftLint
-        run: swiftlint
+        run: swiftlint --config FetchTheDog/swiftlint.yml
   
       - name: Set Default Scheme
         run: |
