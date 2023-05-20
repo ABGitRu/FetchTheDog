@@ -20,9 +20,6 @@ jobs:
 
       - name: Generate SwiftGen files
         run: swiftgen config run --config FetchTheDog/swiftgen.yml
-      
-      - name: Install SwiftLint
-        run: brew install swiftlint
 
       - name: Run SwiftLint
         run: swiftlint --config FetchTheDog/swiftlint.yml
